@@ -101,7 +101,7 @@ function App() {
   return (
     <div className="App">
       <br /><br />
-      <button className="btn btn-success mb-2" onClick={() => abrirCerrarModal()}>Insertar nuevo Elemento</button>
+      <button className="btn btn-success mb-4" onClick={() => abrirCerrarModal()}>Insertar nuevo Elemento</button>
       <table className="table table-bordered">
         <thead >
           <tr>
@@ -113,7 +113,7 @@ function App() {
           </tr>
         </thead>
         <tbody>
-          {data.map(gestor => (
+          {data.map(gestor =>(
             <tr key={gestor.id}>
               <td>{gestor.id}</td>
               <td>{gestor.nombre}</td>
